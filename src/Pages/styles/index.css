@@ -1,0 +1,609 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Highlighting Events */
+.slider-box {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 100px - 10vh);
+}
+
+.slider-boxIn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    height: calc(100vh - 100px - 10vh);
+}
+
+.flexbox {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-box {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 5px;
+    display: flex;
+}
+
+.slide-box img {
+    width: 100%;
+    height: 100%;
+    border: 10px solid whitesmoke;
+}
+
+.arrowBtn {
+    margin: 0px;
+    padding: 0 10px;
+    width: 10%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+/* Highlighting Events */
+
+
+/* About NGO */
+.about-ngo {
+    margin-top: 60px;
+    background-color: rgba(9, 9, 9, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-ngo-box {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-ngo h1 {
+    padding: 30px 0px 15px 0px;
+    color: rgba(44, 184, 44, 0.827);
+}
+
+.about-ngo-design {
+    text-align: center;
+    width: 25%;
+    margin-right: 130px;
+}
+
+.about-ngo-design img {
+    height: 300px;
+    margin-top: 22px;
+}
+
+.about-ngo-content {
+    width: 75%;
+}
+
+.about-ngo-content p {
+    color: rgba(9, 9, 9, 0.7);
+    text-align: justify;
+    font-size: 19px;
+}
+
+/* About NGO */
+
+/* Founder */
+.splide__list {
+    transform: translateX(-972.4px);
+}
+
+.splide {
+    width: 90%;
+}
+
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.founder {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.founder-box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.founder-img {
+    width: 30%;
+    margin-right: 80px;
+}
+
+.founder-img img {
+    height: 220px;
+}
+
+/* Founder */
+
+
+/* Major Activities */
+.activity-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.activities {
+    width: 70%;
+    background-color: rgba(44, 184, 44, 0.827);
+    display: flex;
+    padding: 30px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+
+}
+
+.activity-box {
+    width: 60%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activities h2 {
+    width: 35%;
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activity-l,
+.activity-r {
+    width: 50%;
+    font-size: 22px;
+}
+
+.activity-l ul,
+.activity-r ul {
+    margin-bottom: 0px;
+}
+
+/* Major Activities */
+
+
+
+/* Responsiveness */
+@media screen and (max-width: 395px) {
+    .slider-box {
+        height: 290px;
+    }
+
+    .slide-box img {
+        height: 270px;
+    }
+
+    .about-ngo-box {
+        width: 90%;
+        display: block;
+    }
+
+    .about-ngo-design {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .about-ngo-design img {
+        height: 226px;
+        margin-top: 0px;
+    }
+
+    .about-ngo-content {
+        width: 100%;
+    }
+
+    .about-ngo h1 {
+        font-size: 23px;
+        margin-bottom: 0px;
+    }
+
+    .about-ngo-content p {
+        font-size: 13px;
+    }
+
+    .about-ngo-content ul {
+        margin-top: 6px;
+    }
+
+    .about-ngo-content ul li {
+        font-size: 11px;
+        margin-bottom: 2px;
+    }
+
+    .slides {
+        display: block;
+    }
+
+    .splide {
+        width: 100%;
+    }
+
+    .founder {
+        display: block;
+    }
+
+    .founder-box {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .founder-img {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .founder-img img {
+        height: 190px;
+    }
+
+    .founder-details {
+        width: 100%;
+        padding: 0px 50px;
+    }
+
+    .founder-details h2 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .founder-details p {
+        font-size: 15px;
+    }
+
+    .founder-details p b {
+        font-size: 17px;
+    }
+
+
+    .activities {
+        display: block;
+        width: 75%;
+    }
+
+    .activities h2 {
+        font-size: 33px;
+        width: 100%;
+    }
+
+    .activity-box {
+        width: 100%;
+        margin: 0px;
+        display: block;
+        text-align: center;
+    }
+
+    .activity-l,
+    .activity-r {
+        width: 100%;
+        font-size: 16.5px;
+    }
+
+    .activity-l ul,
+    .activity-r ul {
+        list-style: inside;
+    }
+}
+
+@media (min-width:395px) and (max-width:550px) {
+    .slider-box {
+        height: 350px;
+    }
+
+    .slide-box img {
+        height: 340px;
+    }
+
+    .about-ngo-box {
+        width: 90%;
+        display: block;
+    }
+
+    .about-ngo-design {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .about-ngo-design img {
+        height: 270px;
+        margin-top: 0px;
+    }
+
+    .about-ngo-content {
+        width: 100%;
+    }
+
+    .about-ngo h1 {
+        font-size: 27px;
+        margin-bottom: 3px;
+    }
+
+    .about-ngo-content p {
+        font-size: 16px;
+    }
+
+    .about-ngo-content ul {
+        margin-top: 6px;
+    }
+
+    .about-ngo-content ul li {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+
+    .slides {
+        display: block;
+    }
+
+    .splide {
+        width: 100%;
+    }
+
+    .founder {
+        display: block;
+    }
+
+    .founder-box {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .founder-img {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .founder-details {
+        width: 100%;
+        padding: 0px 50px;
+    }
+
+
+    .activities {
+        display: block;
+        width: 80%;
+    }
+
+    .activities h2 {
+        font-size: 33px;
+        width: 100%;
+    }
+
+    .activity-box {
+        gap: 20px;
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    .activity-l,
+    .activity-r {
+        width: 50%;
+        font-size: 17px;
+    }
+}
+
+@media (min-width:550px) and (max-width:720px) {
+    .slider-box {
+        height: 500px;
+    }
+
+    .slide-box img {
+        height: 450px;
+    }
+
+    .about-ngo-box {
+        width: 90%;
+    }
+
+    .about-ngo-design img {
+        height: 240px;
+        margin-top: 0px;
+    }
+
+    .about-ngo h1 {
+        font-size: 23px;
+        margin-bottom: 3px;
+    }
+
+    .about-ngo-content p {
+        font-size: 13px;
+    }
+
+    .about-ngo-content ul {
+        margin-top: 6px;
+    }
+
+    .about-ngo-content ul li {
+        font-size: 11px;
+        margin-bottom: 4px;
+    }
+
+
+    .founder-box {
+        width: 80%;
+        gap: 20px;
+    }
+
+    .founder-img img {
+        height: 195px;
+    }
+
+    .founder-details h2 {
+        font-size: 26px;
+    }
+
+    .founder-details p {
+        font-size: 13px;
+    }
+
+    .founder-details p b {
+        font-size: 15px;
+    }
+
+
+    .activities {
+        width: 95%;
+    }
+
+    .activities h2 {
+        font-size: 33px;
+    }
+
+    .activity-box {
+        gap: 10px;
+        width: 65%;
+    }
+
+    .activity-l,
+    .activity-r {
+        width: 50%;
+        font-size: 16px;
+    }
+}
+
+@media (min-width:720px) and (max-width:900px) {
+    .about-ngo-box {
+        width: 90%;
+    }
+
+    .about-ngo-design img {
+        height: 272px;
+        margin-top: 0px;
+    }
+
+    .about-ngo h1 {
+        font-size: 26px;
+        margin-bottom: 6px;
+    }
+
+    .about-ngo-content p {
+        font-size: 15px;
+    }
+
+    .about-ngo-content ul {
+        margin-top: 6px;
+    }
+
+    .about-ngo-content ul li {
+        font-size: 12.5px;
+    }
+
+
+    .founder-box {
+        width: 80%;
+        gap: 20px;
+    }
+
+
+    .activities {
+        width: 80%;
+    }
+
+    .activities h2 {
+        font-size: 37px;
+    }
+
+    .activity-box {
+        gap: 10px;
+        width: 65%;
+    }
+
+    .activity-l,
+    .activity-r {
+        width: 50%;
+        font-size: 17px;
+    }
+}
+
+@media (min-width:900px) and (max-width:1050px) {
+    .about-ngo h1 {
+        font-size: 26px;
+        margin-bottom: 6px;
+    }
+
+    .about-ngo-content p {
+        font-size: 15px;
+    }
+
+    .about-ngo-content ul {
+        margin-top: 6px;
+    }
+
+    .about-ngo-content ul li {
+        font-size: 12.5px;
+    }
+
+
+    .founder-box {
+        width: 72%;
+        gap: 30px;
+    }
+
+
+    .activity-box {
+        gap: 10px;
+        width: 65%;
+    }
+
+    .activity-l,
+    .activity-r {
+        width: 47%;
+        font-size: 19px;
+    }
+}
+
+@media (min-width:1050px) and (max-width:1190px) {
+    .about-ngo h1 {
+        font-size: 32px;
+        margin-bottom: 6px;
+    }
+
+    .about-ngo-content p {
+        font-size: 16px;
+    }
+
+    .about-ngo-content ul {
+        margin-top: 6px;
+    }
+
+    .about-ngo-content ul li {
+        font-size: 14px;
+    }
+
+
+    .founder-box {
+        width: 55%;
+        gap: 30px;
+    }
+}

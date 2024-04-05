@@ -1,0 +1,22 @@
+.gallery__img__container {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.gallery__img__card__container {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery__img__title {
+    width: 90%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}

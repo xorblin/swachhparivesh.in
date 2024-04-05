@@ -1,0 +1,11 @@
+.gallery__img__card {
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+}
+
+.gallery__img__card .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

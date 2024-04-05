@@ -1,0 +1,396 @@
+.Footer{
+    width: 100%;
+    position:relative;
+    bottom: 0;
+}
+
+.lower{
+    text-align: center;
+    background-color: rgba(9, 9, 9, 0.1);
+    color: #000;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.lower-under{
+    align-self: center;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    justify-content:space-evenly;
+}
+
+.lower h5{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.useful ul{
+    padding-left: 1rem;
+}
+
+.useful ul li{
+    list-style: none;
+}
+
+.useful ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.useful ul li a:hover{
+    color: rgba(41, 183, 41, 0.974);
+}
+
+.pic{
+    width: 180px;
+    border-radius: 12px;  
+    margin-top: -22px;
+}
+
+.pic img{
+    height: 150px;
+    width: 160px;
+}
+
+.pic a{
+    text-decoration: none;
+}
+
+.pic a p{
+    margin-bottom: 0px;
+    color: rgba(41, 183, 41, 0.974);
+    font-weight: 700;
+}
+
+hr:not([size]) {
+    height: 110px;
+}
+
+hr{
+    width: 1.5px;
+    color: #040404;    
+}
+.useful{
+    width: 200px;
+}
+
+.pics{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pics i{
+    color: rgba(41, 183, 41, 0.974);
+    margin: 10px;
+    font-size: 22px;
+}
+
+.branch{
+    width: 250px;
+}
+
+.last{
+    width: 80%;
+    align-self: center;
+    margin-top: 27px;
+    border-top: 0.5px solid black;
+    padding-top: 20px;
+    padding-bottom: 11px;
+}
+
+.branch p, .last p{
+    color: #000;
+}
+
+
+@media screen and (max-width:1180px){
+    .mailtext{
+        width: 305px;
+    }
+}
+
+
+@media screen and (max-width:950px){
+    .mailtext{
+        width: 270px;
+    }
+
+    .left h3{
+        font-size: 16px;
+    }
+
+    .left h1{
+    font-size: 46px;
+    }
+
+    .upper{
+        margin-bottom: -95px;
+    }
+
+    .umid {
+        height: 220px;
+        margin-top: 45px;
+    }
+
+    .useful {
+        width: 230px;
+    }
+
+    .branch{
+        width: 250px;
+    }
+
+    .pic img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .lower h {
+        font-size: 22px;
+    }
+
+    .lower{
+        padding-top: 44px;
+    }
+
+    .last{
+        margin-top: 8px;
+        border-top: 0.5px solid black;
+        padding-top: 5px;
+        padding-bottom: 3px;
+    }
+
+    .useful ul li, .last p{
+        font-size: 14px;
+    }
+
+    .branch p{
+        font-size: 10px;
+    }
+
+
+}
+
+/* 
+@media screen and (max-width:950px){
+    .left h3{
+        font-size: 12px;
+    }
+
+    .left h1{
+    font-size: 36px;
+    }
+
+    .mailtext{
+        width: 235px;
+    }
+
+    .btn {
+        font-size: 20px;
+        height: 45px;
+        width: 115px;
+        margin: 16px 0 -20px 0;
+    }
+
+    .pic img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .lower-under{
+        gap: 15px;
+    }
+
+    .lower h {
+        font-size: 20px;
+    }
+
+    .lower{
+        padding-top: 44px;
+    }
+} */
+
+
+@media screen and (max-width:700px){
+    .umid{
+        flex-direction: column;
+        height: 265px;
+        padding-top: 20px;
+    }
+
+    .left h3{
+        margin: 0 0 1em 0;
+    }
+
+    .right{
+        align-self: center;
+    }
+
+    .mailtext {
+        width: 340px;
+        height: 47px;
+    }
+
+    .btn{
+    font-size: 22px;
+    height: 50px;
+    width: 125px;
+    margin: 14px 0 0px 0;
+    }
+
+    .lower h {
+        font-size: 16px;
+    }
+
+    .pic img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .lower-under{
+        width: 90%;
+        gap: 22px;
+    }
+}
+
+
+@media screen and (max-width:550px){
+    hr{
+        display: none;
+    }
+    .left h1 {
+        font-size: 28px;
+    }
+
+    .lower-under{
+        flex-wrap: wrap;
+    }
+
+    .mailtext {
+        width: 315px;
+        height: 45px;
+    }
+
+    .btn {
+        font-size: 20px;
+        height: 45px;
+        width: 115px;
+    }
+
+    .lower h {
+        font-size: 20px;
+    }
+
+    .pic{
+        height: 60px;
+    }
+
+    .useful ul {
+        padding-left: 1rem;
+    }
+
+    .umid{
+        height: 235px;
+    }
+
+    .pic a p{
+        display: none;
+    }
+    
+    .last p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:430px){
+
+    .left h1 {
+        font-size: 20px;
+    }
+
+    .mailtext {
+        width: 195px;
+        height: 35px;
+    }
+
+    .umid{
+        height: 200px;
+    }
+
+    .btn {
+        font-size: 18px;
+        height: 42px;
+        width: 105px;
+    }
+
+    .left h3{
+        font-weight: 300;
+        font-size: 9px;
+    }
+
+    .right{
+        padding-bottom: 0;
+    }
+
+    .lower h{
+        font-size: 18px;
+    }
+
+    .useful ul li, .last p {
+        font-size: 12px;
+    }
+
+    .pic a p{
+        display: none;
+    }
+
+    .last p{
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width:340px){
+    .pic img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .umid{
+    padding-top: 10px;
+    }
+
+    .mailtext {
+        width: 168px;
+        height: 30px;
+    }
+
+    .right input{
+        font-size: 12px;
+    }
+
+    .right ::placeholder{
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 16px;
+        height: 38px;
+        width: 95px;
+    }
+
+    .pic a p{
+        display: none;
+    }
+
+    .last p{
+        font-size: 8px;
+    }
+}
+
