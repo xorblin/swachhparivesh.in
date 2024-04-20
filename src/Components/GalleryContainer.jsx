@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import GallImg from "./GallImg";
 import "./styles/GalleryContainer.css";
-export function GalleryContainer({ title, Images }) {
+export default function GalleryContainer({ title, Images }) {
   let code = () => {
     console.log(Images);
   };

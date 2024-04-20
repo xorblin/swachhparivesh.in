@@ -1,0 +1,34 @@
+.splide_carousel__img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+    position: absolute;
+}
+
+.splide__carousel__content__container {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.1px);
+    -webkit-backdrop-filter: blur(3.1px);
+}
+
+.splide__carousel__content {
+    width: 50%;
+    color: var(--white);
+}
+
+.splide__carousel__content__title {
+    font-size: 42px;
+    padding: 20px;
+    color: var(--white);
+}
+
+.splide__carousel__content__text {
+    font-size: 22px;
+    padding: 20px;
+}

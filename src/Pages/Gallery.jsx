@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./styles/gallery.css";
-import { GalleryContainer } from "../Components/GalleryContainer";
+import GalleryContainer from "../Components/GalleryContainer";
 import {
   Founder,
   Neem,
@@ -19,7 +19,7 @@ import {
 } from "../import/gallery";
 const Gallery = () => {
   return (
-    <div className="spf-gallery">
+    <div className="spf-gallery nav__margin ">
       <div className="headLine">
         <div className="head">
           <h1>SPF&apos; Gallery</h1>

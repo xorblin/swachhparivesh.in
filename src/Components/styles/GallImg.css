@@ -8,4 +8,45 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top;
+}
+
+.close__expanded__gall {
+    display: none;
+}
+
+.gallery__expand {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    z-index: 100;
+    z-index: 999999;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.836);
+}
+
+.gallery__expand .close__expanded__gall {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.gallery__expand .gallery__img__expand {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    object-position: center;
 }

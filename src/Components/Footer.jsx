@@ -1,76 +1,119 @@
 import { Link } from "react-router-dom";
 import "./styles/footer.css";
 import NGOLogo from "../assets/NGO_Logo.png";
+import Facebook from "../assets/facebook.svg";
+import Instagram from "../assets/instagram.svg";
 function Footer() {
+  let current_year = new Date().getFullYear();
   return (
-    <div className="Footer">
-      <div className="lower">
-        <div className="lower-under">
-          <div className="pic">
-            <Link to="/">
-              <img src={NGOLogo} alt="Swachh Parivesh Foundation" />
-              <p>Swachh Parivesh Foundation</p>
-            </Link>
-          </div>
-          <hr></hr>
-          <div className="useful">
-            <h5>Useful Links</h5>
-            <ul>
-              <li>
-                <Link to="/"> Home</Link>
-              </li>
-              <li>
-                <Link to="/">Our Goal</Link>
-              </li>
-              <li>
-                <Link to="/">Events</Link>
-              </li>
-              <li>
-                <Link to="/">Media</Link>
-              </li>
-            </ul>
-          </div>
-          <hr></hr>
-          <div className="useful">
-            <h5>Connect to Us</h5>
-            <div className="pics">
-              <Link to="https://www.instagram.com/swachhpfoundation?igsh=MWNuODkwMmtuOGd2dg==">
-                <i class="fa-brands fa-square-instagram"></i>
-              </Link>
-              <Link to="https://www.facebook.com/DharampurVidhansabhaz?mibextid=ZbWKwL">
-                <i class="fa-brands fa-facebook-f"></i>
-              </Link>
-              <Link to="#">
-                <i class="fa-brands fa-x-twitter"></i>
-              </Link>
-            </div>
-          </div>
-          <hr></hr>
-          <div className="branch">
-            <h5>Address</h5>
-            <p>
-              C-Block , Lane- 4-H, Saraswati Vihar, Ajabpur Khurd, Dehradun,
-              Uttarakhand, India- 248121
-            </p>
-            <h5>Contact Us</h5>
-            <p>
-              +91 9639002477 <br /> +91 9760090334
-            </p>
-          </div>
-        </div>
-        <div className="last">
-          <p>
-            &#169; 2024 All Right Reserved By Swachh Parivesh Foundation &
-            Developed By{" "}
-            <a
-              href="http://xorblin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Xorblin
-            </a>
+    <div className="footer__container col cent">
+      <div className="footer__grp__container row">
+        <div className="footer__items col cent">
+          <img
+            className="footer__ngo__logo"
+            src={NGOLogo}
+            alt="Swachh Parivesh Foundation"
+          />
+          <p className="short__desc">
+            Swachh Parivesh Foundation is a non-profit organization that is
+            working towards a cleaner environment. We are dedicated to
+            protecting the environment and making it a better place for future
+            generations.
           </p>
         </div>
+        <div className="footer__items footer__address col">
+          <h3 className="address__header">Contact Us</h3>
+          <p>
+            <strong>Address:</strong> C-Block , Lane- 4-H, Saraswati Vihar,
+            Ajabpur Khurd, Dehradun, Uttarakhand, India- 248121
+          </p>
+          <p>
+            <p>
+              Phone:{" "}
+              <Link className="phone" to="tel:+91 9639002477">
+                +91 9639002477{" "}
+              </Link>
+            </p>
+            <p>
+              Phone:{" "}
+              <Link className="phone" to="tel:+91 9760090334">
+                +91 9760090334
+              </Link>
+            </p>
+          </p>
+          <div className="social__media__item cent row">
+            <Link to="https://facebook.com/DharampurVidhansabhaz">
+              <img
+                className="social__media__icon"
+                src={Facebook}
+                alt="Swachh Parivesh Facebook"
+              />
+            </Link>
+            <Link to="https://instagram.com/swachhpfoundation">
+              <img
+                className="social__media__icon"
+                src={Instagram}
+                alt="Swachh Parivesh Facebook"
+              />
+            </Link>
+          </div>
+        </div>
+        <div className="footer__items col">
+          <h3 className="quick__header">Quick Links</h3>
+          <ul className="quick__links__ul">
+            <li>
+              <Link className="quick__links" to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link className="quick__links" to="/gallery">
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link className="quick__links" to="/donation">
+                Donation
+              </Link>
+            </li>
+            <li>
+              <Link className="quick__links" to="/media">
+                Press On Us
+              </Link>
+            </li>
+            <li>
+              <Link className="quick__links" to="/sitemap.xml">
+                Sitemaps
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="footer__items col">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.9951648320903!2d78.0311329767131!3d30.294199274798856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092969337a9157%3A0x70f8e6b13c72b3f5!2sSwachh%20Parivesh%20Foundation!5e0!3m2!1sen!2sin!4v1712514016004!5m2!1sen!2sin"
+            width="95%"
+            height="95%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Google Maps"
+          ></iframe>
+        </div>
+      </div>
+      <div className="right__container">
+        <p>
+          &#169; {current_year} All Right Reserved By Swachh Parivesh Foundation
+          & Developed By{" "}
+          <a
+            className="referral"
+            href="http://xorblin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Xorblin Pvt. Ltd.
+          </a>
+        </p>
       </div>
     </div>
   );

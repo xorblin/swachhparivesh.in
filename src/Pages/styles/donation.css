@@ -1,111 +1,83 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+.donation__banner {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/donate.jpg");
 }
 
-.donation {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 30px;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  position: relative;
-}
-
-h1 {
+.donation__banner .banner__item {
+  width: 100%;
   text-align: center;
-  margin-bottom: 30px;
-  color: #333;
+  background: rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+
 }
 
-.payment-methods {
-  display: flex;
-  justify-content: space-between;
+.support__header {
+  color: var(--orange);
+  padding-bottom: 50px;
+  font-size: 50px;
 }
 
-.payment-method {
-  width: 48%;
-  overflow: hidden;
-  transition: all 0.5s ease;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.support__para {
+  width: 50%;
+  color: gray;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.payment-method label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #555;
+.donation__container {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 200px;
+  border-top: 2px solid var(--sage);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 100px;
 }
 
-.payment-method p {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  transition: all 0.3s ease;
+.donation__inner__container {
+  width: 90%;
+  height: fit-content;
 }
 
-.upi-details {
+.donation__items {
+  width: 49%;
+  height: 600px;
+  border-radius: 20px;
+  background-color: var(--sage);
+}
+
+.or__container {
+  width: 2%;
+  align-items: center;
+}
+
+.or__line {
+  width: 2px;
+  height: 90%;
+  background-color: #000;
+}
+
+.bank__transfer__container {
   padding: 20px;
-  transition: all 0.5s ease;
 }
 
-.bank-details {
+.bank__details__item {
+  width: 95%;
+  height: 95%;
   padding: 20px;
-  transition: all 0.5s ease;
-  background-color: #ccc;
+  border-radius: 20px;
+  background-color: var(--white);
 }
 
-.bank-details p{
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-}
-
-.qr-code {
-  max-width: 55%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  transition: all 0.5s ease;
-}
-
-.upi-details:hover, .bank-details:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.upi-details:hover .qr-code {
-  transform: scale(1.1);
-}
-
-
-@media screen and (max-width: 330px) {
-  .payment-methods {
-      flex-direction: column;
-  }
-
-  .payment-method {
-      width: 100%;
-  }
-
-  .payment-method p{
-    font-size: 11.5px;
-  }
-}
-
-@media (min-width: 330px) and (max-width: 768px) {
-  .payment-methods {
-      flex-direction: column;
-  }
-
-  .payment-method {
-      width: 100%;
-  }
+.bank__headers {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 40px;
+  font-family: "Great Vibes";
+  letter-spacing: 5px;
 }

@@ -1,14 +1,20 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navigation from "./Components/Navigation";
-import Footer from "./Components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import Index from "./Pages/Index";
-import Gallery from "./Pages/Gallery";
 import Media from "./Pages/Media";
-import Goal from "./Pages/Goal";
-import Donation from "./Pages/Donation";
 import Events from "./Pages/Events";
-
+import Gallery from "./Pages/Gallery";
+import ErrorPage from "./Pages/ErrorPage";
+import Donation from "./Pages/Donation";
+import Footer from "./Components/Footer";
+import Navigation from "./Components/Navigation";
+import Whatsapp from "./Components/Whatsapp";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <BrowserRouter>
       <Navigation />
@@ -16,11 +22,12 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/media" element={<Media />} />
-        <Route path="/goal" element={<Goal />} />
         <Route path="/donation" element={<Donation />} />
         <Route path="/events" element={<Events />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
+      <Whatsapp />
     </BrowserRouter>
   );
 }

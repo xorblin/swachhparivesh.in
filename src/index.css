@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
+@font-face {
+  font-family: "Great Vibes";
+  src: url("./assets/Fonts/GreatVibes-Regular.ttf");
+}
+
 :root {
   --white: #fff;
   --green: #29b729f8;
+  --sage: #ADBC9F;
+  --yellow: #FFB534;
+  --orange: #E86A33;
 }
 
 * {
@@ -22,6 +30,16 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+
+.nav__margin {
+  margin-top: 130px;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -34,6 +52,6 @@ body {
 
 .cent {
   display: flex;
-  align-self: center;
+  align-items: center;
   justify-content: center;
 }

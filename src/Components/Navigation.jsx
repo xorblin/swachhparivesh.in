@@ -4,6 +4,9 @@ import Hamburger from "../assets/hamburger.svg";
 
 import { Link } from "react-router-dom";
 function Navigation() {
+  // Hamburger Menu
+  let links = document.querySelectorAll(".nav__menu__link");
+
   const hamburgerHandler = () => {
     let hamburgerIcon = document.getElementById("hamburger__icon");
     let nav = document.getElementById("nav__menu__container");
@@ -12,19 +15,28 @@ function Navigation() {
     nav.classList.toggle("nav__menu__container--active");
     menu.classList.toggle("nav__menu--active");
   };
+
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      let hamburgerIcon = document.getElementById("hamburger__icon");
+      let nav = document.getElementById("nav__menu__container");
+      let menu = document.getElementById("menu__container");
+      hamburgerIcon.classList.remove("hamburger__icon--active");
+      nav.classList.remove("nav__menu__container--active");
+      menu.classList.remove("nav__menu--active");
+    });
+  });
   return (
     <div className="nav__container row">
-      <div className="ngo__name__container row">
-        <p className="ngo__name">Swachh Parivesh Foundation</p>
-      </div>
       <div className="ngo__logo__container cent">
-        <img
-          className="logo_img"
-          src={SwachhPariveshLogo}
-          alt="Swachh Parivesh NGO"
-        />
+        <Link to="/">
+          <img
+            className="logo_img"
+            src={SwachhPariveshLogo}
+            alt="Swachh Parivesh NGO"
+          />
+        </Link>
       </div>
-
       <div className="nav__hamburger__container row" id="nav__menu__container">
         <button
           className="hamburger__btn"
@@ -41,22 +53,24 @@ function Navigation() {
         <div className="menu__container" id="menu__container">
           <ul className="nav__menu__ul" id="nav__menu">
             <li>
-              <Link to="/">Home</Link>
+              <Link className="nav__menu__link" to="/">
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/gallery">Gallery</Link>
+              <Link className="nav__menu__link" to="/gallery">
+                Gallery
+              </Link>
             </li>
             <li>
-              <Link to="/media">Media</Link>
+              <Link className="nav__menu__link" to="/media">
+                Media
+              </Link>
             </li>
             <li>
-              <Link to="/goal">Goal</Link>
-            </li>
-            <li>
-              <Link to="/donation">Donation</Link>
-            </li>
-            <li>
-              <Link to="/events">Events</Link>
+              <Link className="nav__menu__link desk__btn" to="/donation">
+                Donation
+              </Link>
             </li>
           </ul>
         </div>

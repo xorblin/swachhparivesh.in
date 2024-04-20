@@ -1,0 +1,44 @@
+.focused__card {
+    width: calc(100% / 4);
+    height: 500px;
+    color: var(--white);
+    position: relative;
+}
+
+.focused__card__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.focused__hover__container {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.focused__hover__content {
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid var(--white);
+}
+
+.focused__card__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .focused__card {
+        width: 100%;
+        height: 400px;
+    }
+
+}

@@ -1,8 +1,11 @@
 .nav__container {
     width: 100%;
     height: 120px;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
     background-color: var(--white);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .nav__hamburger__container,
@@ -16,13 +19,6 @@
     padding-left: 50px;
 }
 
-.ngo__name__container .ngo__name {
-    font-size: 1.7rem;
-    font-weight: 700;
-    color: var(--green);
-
-}
-
 .ngo__logo__container {
     width: 20%;
     height: 100%;
@@ -30,79 +26,142 @@
 
 .ngo__logo__container .logo_img {
     width: 90px;
+    height: 90px;
     object-fit: contain;
 }
 
 .nav__hamburger__container {
-    /* padding-right: 50px; */
+    flex: 1;
     justify-content: flex-end;
+    padding-right: 50px;
 }
 
 .hamburger__btn {
-    width: 100px;
-    height: 50px;
-    border: none;
-    background-color: transparent;
-}
-
-
-.hamburger__icon {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-}
-
-.hamburger__icon--active {
-    rotate: 90deg;
-}
-
-.menu__container {
     display: none;
 }
 
-.nav__menu__container--active {
-    display: flex;
-    flex-direction: column !important;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    z-index: 100;
-    top: 0;
-    justify-content: flex-start;
-    background-color: var(--white);
-}
-
-.nav__menu__container--active .hamburger__btn {
-    position: absolute;
-    right: 0;
-    top: 30px;
-}
-
-.nav__menu--active {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: calc(100vh - 120px);
+.menu__container {
+    width: fit-content;
 }
 
 .nav__menu__ul {
-    list-style: none;
-    height: 70%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    list-style: none;
+    flex-direction: row;
 }
 
-.nav__menu__ul li {
-    text-align: center;
-}
-
-.nav__menu__ul li a {
-    font-size: 1.5rem;
-    font-weight: 700;
+.nav__menu__link {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black);
+    padding-left: 100px;
     text-decoration: none;
-    color: #000;
+}
+
+.desk__btn {
+    margin-left: 50px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    border: 2px solid var(--orange);
+}
+
+@media screen and (max-width: 768px) {
+    .nav__container {
+        justify-content: space-between;
+    }
+
+    .ngo__logo__container {
+        margin-left: 30px;
+
+    }
+
+    .ngo__logo__container .logo_img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .nav__hamburger__container {
+        padding-right: 0 !important;
+    }
+
+    .hamburger__btn {
+        width: 100px;
+        height: 50px;
+        border: none;
+        display: flex;
+        background-color: transparent;
+    }
+
+
+    .hamburger__icon {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+    }
+
+    .hamburger__icon--active {
+        rotate: 90deg;
+    }
+
+    .menu__container {
+        display: none;
+    }
+
+    .nav__menu__container--active {
+        display: flex;
+        flex-direction: column !important;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        top: 0;
+        justify-content: flex-start;
+        background-color: var(--white);
+    }
+
+    .nav__menu__container--active .hamburger__btn {
+        position: absolute;
+        right: 0;
+        top: 30px;
+    }
+
+    .nav__menu--active {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: calc(100vh - 120px);
+    }
+
+    .nav__menu__ul {
+        list-style: none;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .nav__menu__ul li {
+        text-align: center;
+    }
+
+    .nav__menu__ul li a {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .nav__menu__link {
+        padding-left: 0 !important;
+    }
+
+    .desk__btn {
+        margin-left: 0 !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+        border: none !important;
+    }
 }
