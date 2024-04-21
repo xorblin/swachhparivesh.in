@@ -217,6 +217,7 @@
 .objective__content {
     width: 80%;
     height: 100%;
+    text-align: center;
 }
 
 /* Gallery */
@@ -237,6 +238,7 @@
     border-radius: 10px;
     margin-bottom: 40px;
 }
+
 
 .view__more__container {
     width: 100%;
@@ -299,5 +301,57 @@
 
     .story__item__content {
         margin-top: 50px;
+    }
+
+    .mv__main__container {
+        padding: 50px 0;
+        flex-direction: column !important;
+    }
+
+    .mv__item {
+        padding: 20px 30px;
+        width: 100% !important;
+        height: fit-content !important;
+    }
+
+    .founder__container {
+        padding: 0;
+        height: fit-content !important;
+    }
+
+    .founder__main__container {
+        padding: 50px 0;
+        height: fit-content !important;
+
+    }
+
+    .founder__items {
+        flex-direction: column !important;
+    }
+
+    .founder__card__container {
+        width: 100% !important;
+        padding: 20px 0;
+    }
+
+    .founder__card {
+        width: 100% !important;
+
+    }
+
+    .objective__main__container {
+        padding: 50px 0;
+
+    }
+
+    .index__gallery__card__container {
+        padding: 50px 20px;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+
+    .index__gallery__img {
+        width: 350px;
+        height: 300px;
     }
 }

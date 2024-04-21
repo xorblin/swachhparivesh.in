@@ -8,9 +8,7 @@ import { Img1, Img2, Img3, Img4 } from "../import/Splide";
 import { founder, secretary } from "../import/founder";
 import FocusedData from "../import/focused";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-
 import Founder from "../Components/FounderCard";
-import SplideSlider from "../Components/SplideSlider";
 
 import Slum from "../assets/Events/work-in-slums.jpg";
 import Plantation from "../assets/Events/plantation.jpg";
@@ -18,6 +16,7 @@ import Empowerment from "../assets/Gallery/Empowerment/empowerment3.jpg";
 import Health from "../assets/Gallery/Health/health2.jpg";
 import Relief from "../assets/Gallery/Relief/relief1.jpg";
 import Awareness from "../assets/Gallery/Awareness/awareness1.jpg";
+import BodyHelmet from "../Components/BodyHelmet";
 
 const Home = () => {
   let splideOption = {
@@ -33,21 +32,42 @@ const Home = () => {
   }
   return (
     <>
+      <BodyHelmet
+        title="Home"
+        description="This is the home page"
+        keywords="home, page, website"
+      />
       <div className="banner__container nav__margin row">
         <div className="banner__item banner__splide__image__container">
           <Splide hasTrack={false} aria-label="" options={splideOption}>
             <SplideTrack>
               <SplideSlide>
-                <img src={Img1} className="splide__img" alt="" />
+                <img
+                  src={Img1}
+                  className="splide__img"
+                  alt="Swachh Parivesh Tree Plantation"
+                />
               </SplideSlide>
               <SplideSlide>
-                <img src={Img2} className="splide__img" alt="" />
+                <img
+                  src={Img2}
+                  className="splide__img"
+                  alt="Swachh Parivesh Cleanliness Tour "
+                />
               </SplideSlide>
               <SplideSlide>
-                <img src={Img3} className="splide__img" alt="" />
+                <img
+                  src={Img3}
+                  className="splide__img"
+                  alt="Swach Parivesh Women Computer Education Empowerment"
+                />
               </SplideSlide>
               <SplideSlide>
-                <img src={Img4} className="splide__img" alt="" />
+                <img
+                  src={Img4}
+                  className="splide__img"
+                  alt="Swach Parivesh Business Empowerment"
+                />
               </SplideSlide>
             </SplideTrack>
           </Splide>

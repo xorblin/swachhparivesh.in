@@ -1,5 +1,5 @@
-import FounderImg from "../assets/founder.png";
-import SecretaryImg from "../assets/secretary.png";
+import FounderImg from "../assets/founder.jpg";
+import SecretaryImg from "../assets/secretary.jpeg";
 const secretary =
 {
     img: SecretaryImg,

@@ -1,6 +1,6 @@
 import "./styles/donation.css";
 import UPIQR from "../assets/SPF_QR.png";
-const Donation = () => {
+export default function Donation() {
   return (
     <>
       <div className="donation__banner cent">
@@ -19,8 +19,8 @@ const Donation = () => {
       <div className="donation__container cent">
         <div className="donation__inner__container row">
           <div className="donation__items cent">
-            <div>
-              <img className="qr-code" src={UPIQR} alt="UPI QR Code" />
+            <div className="qr__code__container">
+              <img className="qr__code" src={UPIQR} alt="UPI QR Code" />
             </div>
           </div>
           <div className="or__container col">
@@ -30,20 +30,20 @@ const Donation = () => {
           </div>
           <div className="donation__items bank__transfer__container cent">
             <div className="bank__details__item">
-              <h2 className="bank__headers">
-                Bank <u>Transfer</u>
-              </h2>
+              <h2 className="bank__headers">Bank Transfer</h2>
               <div>
-                <p>swach97600@barodampay</p>
-                <p>SWACH PARIVESH FOUNDATION</p>
-                <p>58930100002634</p>
-                <p>Bank Name:</p>
-                <p>Bank of Baroda</p>
-                <p>Account Number:</p>
-                <p>IFSC Code:</p>
-                <p>BARB0AJABPU</p>
+                <p>UPI ID</p>
+                <p className="bank__input">swach97600@barodampay</p>
                 <p>Account Holder&apos;s Name:</p>
-                <p>AJABPUR KALAN</p>
+                <p>SWACH PARIVESH FOUNDATION</p>
+                <p>Bank Name:</p>
+                <p className="bank__input">Bank of Baroda</p>
+                <p>Account Number:</p>
+                <p className="bank__input">58930100002634</p>
+                <p>IFSC Code:</p>
+                <p className="bank__input">BARB0AJABPU</p>
+                <p>Branch</p>
+                <p className="bank__input">AJABPUR KALAN</p>
               </div>
             </div>
           </div>
@@ -51,22 +51,4 @@ const Donation = () => {
       </div>
     </>
   );
-};
-
-export default Donation;
-
-// // <h1>Donate Now!</h1>
-// <div className="payment-methods">
-// <div className="payment-method">
-//   <div className="upi-details">
-//     <h2>UPI Payment</h2>
-
-//     <label>UPI ID:</label>
-//     <label>Merchant Name:</label>
-//     <p>SWACH PARIVESH FOUNDATION</p>
-//   </div>
-// </div>
-// <div className="payment-method">
-//   <div className="bank-details">
-//
-//   </div>
+}
